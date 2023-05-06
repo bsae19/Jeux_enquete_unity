@@ -345,10 +345,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/camera_movement.cs"
-"Assets/click.cs"
-"Assets/pickup.cs"
 "Assets/QuickOutline/Scripts/Outline.cs"
+"Assets/script/active.cs"
+"Assets/script/camera_movement.cs"
+"Assets/script/click.cs"
+"Assets/script/pickup.cs"
+"Assets/script/popup_menu.cs"
 -langversion:9.0
 
 /deterministic
