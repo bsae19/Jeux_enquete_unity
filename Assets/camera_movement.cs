@@ -97,11 +97,11 @@ namespace UnityTemplateProjects
 
             lookAction.AddBinding("<Gamepad>/rightStick").WithProcessor("scaleVector2(x=15, y=15)");
             movementAction.AddCompositeBinding("Dpad")
-                .With("Up", "<Keyboard>/w")
+                .With("Up", "<Keyboard>/z")
                 .With("Up", "<Keyboard>/upArrow")
                 .With("Down", "<Keyboard>/s")
                 .With("Down", "<Keyboard>/downArrow")
-                .With("Left", "<Keyboard>/a")
+                .With("Left", "<Keyboard>/q")
                 .With("Left", "<Keyboard>/leftArrow")
                 .With("Right", "<Keyboard>/d")
                 .With("Right", "<Keyboard>/rightArrow");
@@ -109,7 +109,7 @@ namespace UnityTemplateProjects
                 .With("Up", "<Keyboard>/pageUp")
                 .With("Down", "<Keyboard>/pageDown")
                 .With("Up", "<Keyboard>/e")
-                .With("Down", "<Keyboard>/q")
+                .With("Down", "<Keyboard>/a")
                 .With("Up", "<Gamepad>/rightshoulder")
                 .With("Down", "<Gamepad>/leftshoulder");
             boostFactorAction.AddBinding("<Gamepad>/Dpad").WithProcessor("scaleVector2(x=1, y=4)");
@@ -137,7 +137,7 @@ namespace UnityTemplateProjects
             direction.z = moveDelta.y;
             direction.y = verticalMovementAction.ReadValue<Vector2>().y;
 #else
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.Z))
             {
                 direction += Vector3.forward;
             }
@@ -145,7 +145,7 @@ namespace UnityTemplateProjects
             {
                 direction += Vector3.back;
             }
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.Q))
             {
                 direction += Vector3.left;
             }
@@ -153,7 +153,7 @@ namespace UnityTemplateProjects
             {
                 direction += Vector3.right;
             }
-            if (Input.GetKey(KeyCode.Q))
+            if (Input.GetKey(KeyCode.A))
             {
                 direction += Vector3.down;
             }
